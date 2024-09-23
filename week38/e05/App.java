@@ -11,30 +11,30 @@ class App {
 
         System.out.print("Please enter the day of week: ");
         
-        String userInput = scanner.nextLine().toUpperCase();
+        String userInput = scanner.nextLine();
 
         Day day = Day.valueOf(userInput);
 
         switch(day) {
-            case Day.MONDAY:
+            case MONDAY:
                 System.out.println("Start of the work week!");
                 break;
-            case Day.TUESDAY:
+            case TUESDAY:
                 System.out.println("Remember to drink coffee :)");
                 break;
-            case Day.WEDNESDAY:
+            case WEDNESDAY:
                 System.out.println("Week already half done!");
                 break;
-            case Day.THURSDAY:
+            case THURSDAY:
                 System.out.println("Friday tomorrow...");
                 break;
-            case Day.FRIDAY:
+            case FRIDAY:
                 System.out.println("Finally! Weekend!");
                 break;
-            case Day.SATURDAY:
+            case SATURDAY:
                 System.out.println("Enjoy the weekend!");
                 break;
-            case Day.SUNDAY:
+            case SUNDAY:
                 System.out.println("Enjoy the weekend!");
                 break;
             default:
